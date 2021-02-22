@@ -14,58 +14,50 @@ You can also custom some loading paths in the `settings.yml`
 
 The file name of each menu will be taken as its ID
 
-## 配置Configu
+## Configure
 
-菜单的配置项将在接下来的章节详细解析
+Menu configuration will be introduced in the next chapter
 
-请先浏览下方所提供的示例模式，快速了解菜单基本结构
+Learn the basic structure below
 
 ```yaml
-# 容器显示的标题
+# The title of the menu
 Title: 'TrMenu'
 
-# 容器标题刷新的时间
+# The update period of titles
 Title-Update: 40
 
-# 菜单布局
+# Layout of the menu
 Layout: []
 
-# 菜单布局 - 玩家容器
+# Layout (Player Inventory)
 PlayerInventory: []
 
-# 菜单选项
 Options:
-  # 是否启用参数
+  # Whether to enable the arguments feature
   Arguments: false
-  # 默认参数填充
+  # Default arguments complete
   Default-Arguments: [ ]
-  # 非上锁槽位
+  # Unlocked slots
   Free-Slots:
     - 71
     - 72
-  # 默认页码
+  # Default page
   Default-Layout: 0
-  # 是否隐藏玩家容器物品
+  # Whether to hide player's items when viewing a menu
   Hide-Player-Inventory: false
-  # 最小点击延时
   Min-Click-Delay: 200
-  # 强制依赖的 PlaceholderAPI 拓展
   Depend-Expansions: [ 'server', 'player', 'progress', 'animations' ]
 
-# 菜单绑定
 Bindings:
-  # 命令
   Commands:
     - '(?i)example(-)?(gui)?(s)?'
-  # 物品特征
   Items:
     - 'material:compass'
     - 'material:clock,lore:OPEN_MENU'
     - 'texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDRmNDUyZDk5OGVhYmFjNDY0MmM2YjBmZTVhOGY0ZTJlNjczZWRjYWUyYTZkZmQ5ZTZhMmU4NmU3ODZlZGFjMCJ9fX0='
 
-# 菜单事件反应
 Events:
-  # 开启事件
   Open:
     - condition: 'perm *trmenu.use'
       actions:
@@ -74,36 +66,34 @@ Events:
         - 'sound: ENTITY_ITEM_BREAK-1-0'
         - 'title: `&c&lPermission Required` `&7&lYou need permission &6&ltrmenu.use &7&lto open this menu` 15 20 15'
         - 'return'
-  # 关闭事件
   Close:
     - 'sound: BLOCK_CHEST_CLOSE-1-0'
 
-# 菜单的图标主体
 Icons:
-  # 图标 Id
+  # The ID of this icon
   'Close':
-    # 显示属性更新频率
+    # The update settings
     update: []
-    # 子图标重新计算频率
+    # The refresh period (to recalculate the sub-icons)
     refresh: -1
-    # 显示部分
+    # The display part
     display: []
-    # 动作部分
+    # The click handler
     actions: []
 
-# 定时任务
+# Custom scheduled tasks
 Tasks:
-  # 任务 ID
+  # ID
   tikTok:
-    # 任务周期 (in ticks)
+    # Period (in ticks)
     period: 80
-    # 任务反应 (reactions)
+    # Reactions
     task:
       - condition: '$ sender.isOp()'
         actions:
           - 'sound: BLOCK_NOTE_BLOCK_BIT-1-2'
 
-# 内置自定义 JavaScript 函数
+# Internal JavaScript functions
 Functions:
   id: 'content'
 

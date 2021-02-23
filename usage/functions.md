@@ -1,4 +1,4 @@
-# 函数变量
+# Inline Functions
 
 ## 菜单参数 函数
 

@@ -96,30 +96,30 @@ Tasks:
 # Internal JavaScript functions
 Functions:
   id: 'content'
-
 ```
 
 ### Structure
 
 * Title
-    * Single for static or multiple for animation
-    * The update period
+  * Single for static or multiple for animation
+  * The update period
 * Layout
-    * Layout for the container
-    * Layout for the player's inventory
+  * Layout for the container
+  * Layout for the player's inventory
 * Options
-    * Default Arguments
-    * Default Page Index
-    * Hide Player Inventory Items
-    * Unlocked Slots
-    * Min click delay
-    * Depend-on PlaceholderAPI expansions
+  * Default Arguments
+  * Default Page Index
+  * Hide Player Inventory Items
+  * Unlocked Slots
+  * Min click delay
+  * Depend-on PlaceholderAPI expansions
 * Bindings
-    * Bound Commands (Regex)
-    * Bound Items
+  * Bound Commands \(Regex\)
+  * Bound Items
 * Events
-    * Open Menu
-    * Close Menu
+  * Open Menu
+  * Close Menu
 * Icons
 * Internal Functions
 * Scheduled Tasks
+

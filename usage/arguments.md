@@ -2,7 +2,7 @@
 description: TrMenu 的菜单支持将触发命令后缀的参数作为变量使用
 ---
 
-# 菜单传参
+# Menu Arguments
 
 ## 功能启用
 

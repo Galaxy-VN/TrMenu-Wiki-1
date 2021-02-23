@@ -1,2 +1,2 @@
-# 支持插件
+# Hooked Plugins
 

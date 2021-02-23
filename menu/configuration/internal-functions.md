@@ -2,7 +2,7 @@
 description: 内置 JavaScript 函数是菜单配置 Functions 节点下的自定义脚本
 ---
 
-# 内置函数
+# Internal Functions
 
 {% hint style="info" %}
 使用本功能，需要有一些 JavaScript 语法基础

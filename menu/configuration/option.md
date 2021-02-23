@@ -2,7 +2,7 @@
 description: Menu options
 ---
 
-# Options
+# Option
 
 ## Usage
 
@@ -35,8 +35,8 @@ Options:
 ## Notes
 
 * If the default arguments option is set, the arguments not provided by the player will be taken from the default arguments. Example:
-  * Default-Arguments: ["TrMenu", "Arasple"]
+  * Default-Arguments: \["TrMenu", "Arasple"\]
   * If the player provides only the argument TrMenu, then the second argument will be automatically defined as Arasple
-
-* The default-Layout: # option will show the first layout if the specified one doesn't exist. You can also set the layout if you open the menu with the command `/trmenu open <menu>:<layout>`  
+* The default-Layout: \# option will show the first layout if the specified one doesn't exist. You can also set the layout if you open the menu with the command `/trmenu open <menu>:<layout>`
   * Example: /trmenu open ShopGUI+:2 Tanguygab
+

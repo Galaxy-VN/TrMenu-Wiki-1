@@ -2,7 +2,7 @@
 description: 本文章皆在带你快速了解 TrMenu 3.0 以及升级步骤
 ---
 
-# 升级向导
+# Upgrade Guide
 
 ## 更新内容
 

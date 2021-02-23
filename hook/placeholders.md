@@ -1,4 +1,4 @@
-# PAPI 变量
+# PAPI Placeholders
 
 ## 菜单总量
 

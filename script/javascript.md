@@ -1,34 +1,45 @@
 ---
-description: 本节需要有一定的 Java / JavaScript 或类似编程基础方便理解
+description: >-
+  This section requires a certain Java / JavaScript or similar programming
+  foundation to facilitate understanding
 ---
 
 # JavaScript
 
-## 对象
+## Objects
 
-TrMenu 的 JavaScript 引擎目前提供以下对象
+TrMenu’s JavaScript engine currently provides the following objects
 
-* `bukkitServer` 即 Bukkit.getServer\(\)
-* `utils` 即 me.arasple.mc.trmenu.module.internal.script.js.Assist.INSTANCE
-* `player` 即 玩家本身
-* `session` 即 me.arasple.mc.trmenu.module.display.MenuSession
+* `bukkitServer`  Bukkit.getServer\(\)
+* `utils`  me.arasple.mc.trmenu.module.internal.script.js.Assist.INSTANCE
+* `player`  the player himself
+* `session`  me.arasple.mc.trmenu.module.display.MenuSession
 
-## 函数
+## Functions
 
-TrMenu 的 JavaScript 引擎目前提供以下函数
+TrMenu’s JavaScript engine currently provides the following functions
 
-* `vars(String input)`  返回替换函数变量
-* `varInt(String input)` 替换变量并转换为整型
+* `vars(String input)`  Replace the string with placeholders and inline functions
+* `varInt(String input)` Perform the above operation and then convert it to Integer
+* `varDouble(String input)` 
 
-## 注意
+## Note
 
-* TrMenu 的 JavaScript 均会预编译缓存，一切变量使用都需要通过函数处理
-* 表示 “或” 的符号为 `||` , 表示 “与” 的符号为 `&&`
+* TrMenu’s JavaScript will be pre-compiled and cached, aiming to improve performance, so all variables need to be processed through functions
 
-## 实例
+## Assist Utils
 
-* 判断有无权限
-  * 可直接调用 player 对象的方法，`player.hasPermission("perm")` 
+{% embed url="https://github.com/TrMenu/TrMenu/blob/master/src/main/kotlin/me/arasple/mc/trmenu/module/internal/script/js/Assist.kt" caption="Assist.kt" %}
+
+## Examples
+
+* Check Permission
+  * `player.hasPermission("perm")` 
+* Check money
+  * `utils.hasMoney(player, vars("%player_health%"))` 
+* ...
+
+
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: '[] 为必填参数，<> 为选填参数'
+description: '[] are required，<> are optional'
 ---
 
-# 插件命令
+# Command
 
-## 主命令
+## Main
 
-> 插件的主命令
+> The plugin's main command
 
-* 名称：`trmenu` `menu` 
-* 权限: `trmenu.access` 
+* Name: `trmenu` `menu` 
+* Permission: `trmenu.access` 
 
 ## List
 
-> 列出已加载的菜单
+> List loaded menus
 
 * 权限: `trmenu.command.list` 
 * 参数

@@ -8,81 +8,81 @@ description: '[] are required，<> are optional'
 
 > The plugin's main command
 
-* Name: `trmenu` `menu` 
-* Permission: `trmenu.access` 
+* Name: `trmenu` `menu`
+* Permission: `trmenu.access`
 
 ## List
 
 > List loaded menus
 
-* 权限: `trmenu.command.list` 
-* 参数
-  * &lt;Filter&gt; 过滤菜单名称
+* Permission: `trmenu.command.list`
+* Arguments
+    * &lt;Filter&gt;
 
 ## Open
 
-> 打开指定菜单
+> Open a specified menu
 
-* 权限: `trmenu.command.open` 
-* 参数
-  * \[ID\]:&lt;Page&gt; 菜单名称和指定页码
-  * &lt;Player&gt; 指定玩家，不填则默认自己
-  * &lt;菜单参数&gt; 传入的菜单参数，作为变量使用
+* Permission: `trmenu.command.open`
+* Arguments
+    * \[ID\]:&lt;Page&gt; Menu name and specified page index
+    * &lt;Player&gt; Specify the player (by default is the command sender)
+    * &lt;菜单Arguments&gt; The incoming menu arguments, can be used as variables
 * 示例
-  * `trmenu open Example BlackSKY` 为 BlackSKY 玩家打开 Example 菜单
-  * `trmenu open Shop:3` 为自己打开 Shop 菜单，页码 3
+    * `trmenu open Example BlackSKY` Open menu `Example` for player `BlackSKY`
+    * `trmenu open Shop:3` Open menu `Shop`, page `3`, for yourself
 
 ## Reload
 
-> 重新载入菜单
+> Reload all menus
 
-* 权限: `trmenu.command.reload` 
+* Permission: `trmenu.command.reload`
 
 ## Template
 
-> 模板创建功能，快速布局菜单（当前仅支持箱子容器）
+> Create a menu quickly
 
-* 权限: `trmenu.command.template` 
-* 参数
-  * &lt;Rows&gt; 菜单的行数大小（1~6）
+* Permission: `trmenu.command.template`
+* Arguments
+    * &lt;Rows&gt; from `1` - `6`
 
 ## Action
 
-> 测试 TrMenu 动作
+> Test TrMenu Actions
 
-* 权限: `trmenu.command.action` 
-* 参数
-  * \[ID\] 执行动作玩家对象的名称
-  * \[Action\] 动作行
-* 注意
-  * 默认将向命令执行者打印动作返回 & 相关消耗
-  * 隐藏此打印功能需要在动作行最前面加以 `#` 标记
+* Permission: `trmenu.command.action`
+* Arguments
+    * \[ID\] Target (Player)
+    * \[Action\] Action line
+* Note
+    * By default, the action results will be printed to the sender
+    * You can hide it by adding `#` as prefix of the action line
 
 ## Item
 
-> 管理控制物品
+> Items management
 
-* 权限: `trmenu.command.item` 
-* 参数
-  * \[Method\] 操作类型
-    * toJson 转换手中物品为 JSON 文本格式
-    * fromJson 将参数2的文本内容转换为物品对象
-    * save 保存物品到物品仓库
-    * get 取得物品从物品仓库
-    * delete 删除物品自物品仓库
-  * &lt;Value&gt; 值
+* Permission: `trmenu.command.item`
+* Arguments
+    * \[Method\] Type
+        * toJson - Convert the item in hand to JSON text format
+        * fromJson - Convert the JSON text to a item
+        * save - save item to item repository
+        * get - get item from item repository
+        * delete - delete item from item repository
+    * &lt;Value&gt;
 
 ## Sounds
 
-> 预览音效
+> Preview sounds
 
-* 权限: `trmenu.command.sounds` 
-* 参数
-  * &lt;Filter&gt; 过滤音效名称
+* Permission: `trmenu.command.sounds`
+* Arguments
+    * &lt;Filter&gt;
 
 ## Debug
 
-> 调试功能
+> Debug feature
 
-* 权限: `trmenu.command.debug`
+* Permission: `trmenu.command.debug`
 

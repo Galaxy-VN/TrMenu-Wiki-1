@@ -1,2 +1,2 @@
-# Configuration
+# Configure
 

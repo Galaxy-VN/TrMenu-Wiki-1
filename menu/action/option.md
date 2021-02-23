@@ -2,7 +2,7 @@
 description: 单条动作支持的参数
 ---
 
-# 参数
+# Option
 
 ## 延时
 

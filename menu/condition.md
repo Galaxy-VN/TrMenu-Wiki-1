@@ -1,4 +1,4 @@
-# 条件
+# Condition
 
 ## 引入
 
@@ -27,7 +27,7 @@ Kether 表达式直接使用，JavaScript 表达式需加以 `js:`  前缀且规
 
 ## 进阶
 
-{% page-ref page="../script/kether.md" %}
+{% page-ref page="../script/kether/" %}
 
 {% page-ref page="../script/javascript.md" %}
 

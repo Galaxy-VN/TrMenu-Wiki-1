@@ -1,2 +1,2 @@
-# 命令注册
+# Register Commands
 

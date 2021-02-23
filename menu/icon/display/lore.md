@@ -2,7 +2,7 @@
 description: 物品的 Lore 描述
 ---
 
-# 描述
+# Lore
 
 ## 示例
 

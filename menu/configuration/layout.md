@@ -1,16 +1,12 @@
 ---
-description: 通过布局用字符快速排版菜单，提高编辑效率和可视化
+description: The menu layout is a major feature of TrMenu which allows you to quicly design menus easily (it looks better with items with a single character).
 ---
 
-# 布局
+# Layout
 
-## 示例
+## Usage
 
 ```yaml
-#
-# 菜单的布局功能
-# 你可以用 ` ` 来标记设置多个字符名称图标的位置
-#
 Layout:
   - '########`Close`'
   - '         '
@@ -18,9 +14,6 @@ Layout:
   - '         '
   - '########`Next`'
 
-#
-# 玩家容器菜单的布局
-#
 PlayerInventory:
   - '         '
   - '         '
@@ -28,12 +21,12 @@ PlayerInventory:
   - '         '
 ```
 
-* **每个字符**代表一个图标在菜单中的位置，你也可以用 \` 将字符串包裹起来，从而不受限于单个字符
-* 字符即是图标的唯一 ID，通过布局实现可视化编辑从而不再需要为图标单独设置槽位
-* 布局的行数将同时定义箱子容器的大小
-* 玩家容器菜单布局仅限 4\*9 大小
+* **Each character** represents an icon's position.
+* You can also use icons with multiple characters if you surround them by \` `
+* This defines the size of the menu at the same time
+* The PlayerInventory feature, allows you to have 4 rows more in your menu by using the player's inventory!
 
-## 多页
+## Multiples pages
 
 ```yaml
 Layout:
@@ -50,11 +43,9 @@ Layout:
     - '`Pre`########'
 ```
 
-* 布局功能可以支持多个布局，从而在同一个菜单中快速实现多页功能
-* PlayerInventory 同理对应
+* You can also have multiples layouts (multiples pages) which you can then change with the `Page` action
+* The PlayerInventory works alongside multiples layouts too!
 
-## 注意
+## Note
 
-* 若无 **玩家容器菜单布局** 与 **菜单布局** 对应，则在该菜单页玩家容器为空
-* 标识图标的字符支持汉字
-
+* If a Layout doesn't have a corresponding PlayerInventory layout, then the player's inventory won't be used on this page  

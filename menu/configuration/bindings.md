@@ -1,20 +1,21 @@
 ---
-description: 绑定菜单到快捷命令打开 & 物品特征
+description: Bind the menu to commands or items
 ---
 
-# 绑定
+# Bindings
 
-## 示例
+## Usage
 
 ```yaml
 #
-# 菜单绑定的快捷打开方式
+# Ways to open the menu. 
 #
 Bindings:
-  # 绑定命令, 支持正则
+  # Defines the commands used to open this menu.
+  # Regex supported
   Commands:
     - 'tester'
-  # 绑定到物品特征
+  #  Defines the items which will open this menu when clicked.
   Items:
     - 'material:compass'
 ```

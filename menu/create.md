@@ -10,7 +10,7 @@ In order to create a new menu, you need to create a new YAML file and configure 
 
 By default, TrMenu load all the YAML files in the `menus` folder, as well as its subdirectories
 
-You can also custom some loading paths in the `settings.yml`  
+You can also custom some loading paths in the `settings.yml`
 
 The file name of each menu will be taken as its ID
 
@@ -28,10 +28,10 @@ Title: 'TrMenu'
 Title-Update: 40
 
 # Layout of the menu
-Layout: []
+Layout: [ ]
 
 # Layout (Player Inventory)
-PlayerInventory: []
+PlayerInventory: [ ]
 
 Options:
   # Whether to enable the arguments feature
@@ -73,13 +73,13 @@ Icons:
   # The ID of this icon
   'Close':
     # The update settings
-    update: []
+    update: [ ]
     # The refresh period (to recalculate the sub-icons)
     refresh: -1
     # The display part
-    display: []
+    display: [ ]
     # The click handler
-    actions: []
+    actions: [ ]
 
 # Custom scheduled tasks
 Tasks:
@@ -99,28 +99,27 @@ Functions:
 
 ```
 
-### 结构
+### Structure
 
-* 标题
-  * 单个或多个标题
-  * 标题更新周期
-* 布局
-  * 菜单布局
-  * 玩家容器布局
-* 选项
-  * 默认补全参数
-  * 默认布局页码
-  * 是否隐藏玩家容器物品
-  * 自由槽位
-  * 防频繁点击间隔
-  * 需要依赖的 PlaceholderAPI 拓展
-* 绑定
-  * 绑定正则命令
-  * 绑定物品特征
-* 事件
-  * 开启菜单执行动作
-  * 关闭菜单执行动作
-* 图标
-* 内置脚本
-* 周期任务
-
+* Title
+    * Single for static or multiple for animation
+    * The update period
+* Layout
+    * Layout for the container
+    * Layout for the player's inventory
+* Options
+    * Default Arguments
+    * Default Page Index
+    * Hide Player Inventory Items
+    * Unlocked Slots
+    * Min click delay
+    * Depend-on PlaceholderAPI expansions
+* Bindings
+    * Bound Commands (Regex)
+    * Bound Items
+* Events
+    * Open Menu
+    * Close Menu
+* Icons
+* Internal Functions
+* Scheduled Tasks

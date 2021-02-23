@@ -27,8 +27,8 @@ description: '[] are required，<> are optional'
 * Arguments
     * \[ID\]:&lt;Page&gt; Menu name and specified page index
     * &lt;Player&gt; Specify the player (by default is the command sender)
-    * &lt;菜单Arguments&gt; The incoming menu arguments, can be used as variables
-* 示例
+    * &lt;Arguments&gt; The incoming menu arguments, can be used as variables
+* Usage
     * `trmenu open Example BlackSKY` Open menu `Example` for player `BlackSKY`
     * `trmenu open Shop:3` Open menu `Shop`, page `3`, for yourself
 

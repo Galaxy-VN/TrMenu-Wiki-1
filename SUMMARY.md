@@ -2,34 +2,34 @@
 
 * [Home](README.md)
 * [Start](start/README.md)
-  * [Purchase](start/purchase.md)
-  * [Install](start/install.md)
-  * [Configurate](start/configurate.md)
+    * [Purchase](start/purchase.md)
+    * [Install](start/install.md)
+    * [Configurate](start/configurate.md)
 
 ## MENU
 
 * [Create](menu/create.md)
-* [配置](menu/configuration/README.md)
-  * [标题](menu/configuration/title.md)
-  * [布局](menu/configuration/layout.md)
-  * [选项](menu/configuration/option.md)
-  * [绑定](menu/configuration/bindings.md)
-  * [事件](menu/configuration/event.md)
-  * [内置函数](menu/configuration/internal-functions.md)
-  * [周期任务](menu/configuration/tasks.md)
-* [图标](menu/icon/README.md)
-  * [设置](menu/icon/settings.md)
-  * [显示](menu/icon/display/README.md)
-    * [材质](menu/icon/display/cai-zhi.md)
-    * [名称](menu/icon/display/name.md)
-    * [描述](menu/icon/display/lore.md)
-    * [属性](menu/icon/display/property.md)
-  * [交互](menu/icon/handler.md)
-* [动作](menu/action/README.md)
-  * [类型](menu/action/types.md)
-  * [参数](menu/action/option.md)
-  * [反应 \(动作组\)](menu/action/reactions.md)
-* [条件](menu/condition.md)
+* [Configure](menu/configuration/README.md)
+    * [Title](menu/configuration/title.md)
+    * [Layout](menu/configuration/layout.md)
+    * [Option](menu/configuration/option.md)
+    * [Bindings](menu/configuration/bindings.md)
+    * [Event](menu/configuration/event.md)
+    * [Internal Functions](menu/configuration/internal-functions.md)
+    * [Tasks](menu/configuration/tasks.md)
+* [Icons](menu/icon/README.md)
+    * [Setting](menu/icon/settings.md)
+    * [Display](menu/icon/display/README.md)
+        * [Texture](menu/icon/display/cai-zhi.md)
+        * [Name](menu/icon/display/name.md)
+        * [Lore](menu/icon/display/lore.md)
+        * [Property](menu/icon/display/property.md)
+    * [Handler](menu/icon/handler.md)
+* [Action](menu/action/README.md)
+    * [Types](menu/action/types.md)
+    * [Option](menu/action/option.md)
+    * [Reaction \(Pack\)](menu/action/reactions.md)
+* [Condition](menu/condition.md)
 
 ## SCRIPT
 
@@ -38,26 +38,26 @@
 
 ## USAGE
 
-* [插件命令](usage/command.md)
-* [菜单传参](usage/arguments.md)
-* [物品特征](usage/item-matchers.md)
-* [函数变量](usage/functions.md)
-* [快捷绑定](usage/shortcuts.md)
-* [命令注册](usage/register-commands.md)
+* [Command](usage/command.md)
+* [Menu Arguments](usage/arguments.md)
+* [Item Matcher](usage/item-matchers.md)
+* [Inline Functions](usage/functions.md)
+* [Shortcuts](usage/shortcuts.md)
+* [Register Commands](usage/register-commands.md)
 
 ## HOOK
 
-* [PAPI 变量](hook/placeholders.md)
-* [支持插件](hook/hookplugins.md)
+* [PAPI Placeholders](hook/placeholders.md)
+* [Hooked Plugins](hook/hookplugins.md)
 
 ## DEVELOP
 
 * [API](develop/api/README.md)
-  * [Events](develop/api/events.md)
-  * [Receptacle](develop/api/receptacle.md)
+    * [Events](develop/api/events.md)
+    * [Receptacle](develop/api/receptacle.md)
 * [Example](develop/example.md)
 
 ## appendix
 
-* [升级向导](appendix/v3-guide.md)
+* [Upgrade Guide](appendix/v3-guide.md)
 

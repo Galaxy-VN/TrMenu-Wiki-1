@@ -29,6 +29,8 @@ description: TrMenu 是一款付费开源插件，致力于提供最优质的菜
 
 ## 渠道 <a id="qu-dao"></a>
 
+[http://afdian.net/@Arasple](http://afdian.net/@Arasple)
+
 TrMenu 爱发电 购买渠道
 
 * 付款购买后，你会在 **爱发电私信** 收到本插件的 **密匙** 以及最新版下载地址

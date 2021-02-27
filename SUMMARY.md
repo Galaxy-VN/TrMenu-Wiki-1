@@ -34,8 +34,9 @@
 ## SCRIPT
 
 * [Kether](script/kether/README.md)
-  * [If & Else](script/kether/if-and-else.md)
+  * [Action Bar](script/kether/action-bar.md)
   * [All](script/kether/all.md)
+  * [If & Else](script/kether/if-and-else.md)
 * [JavaScript](script/javascript.md)
 
 ## USAGE

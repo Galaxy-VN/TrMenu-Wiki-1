@@ -1,8 +1,10 @@
+---
+description: 'If {action} then {action} [else {action}]'
+---
+
 # If & Else
 
-## Usage
-
-> If {action} then {action} \[else {action}\]
+## Introduce
 
 * Basic logic statement
 * When the return value of the first action is true, the second action is executed, otherwise the third action is executed.

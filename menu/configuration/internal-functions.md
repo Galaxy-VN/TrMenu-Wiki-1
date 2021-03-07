@@ -1,14 +1,14 @@
 ---
-description: 内置 JavaScript 函数是菜单配置 Functions 节点下的自定义脚本
+description: Custom JavaScript Functions which can be used as inline variable easily
 ---
 
 # Internal Functions
 
 {% hint style="info" %}
-使用本功能，需要有一些 JavaScript 语法基础
+To use this function, you need some basic JavaScript knowledge
 {% endhint %}
 
-## 示例
+## Usage
 
 ```yaml
 Functions:
@@ -20,17 +20,14 @@ Functions:
     flash()
 ```
 
-* 在该例中，我们在 Functions 下定义了一个 `flash` 函数，本函数根据判断当前系统的时间（秒）是否为偶数，决定是返回传入参数还是一个空格
-* 该函数可以实现闪烁的动画效果，且支持自定义参数参数作为闪烁符号
+## Note
 
-## 注意
-
-* 调用格式为 `${[funcName]_[Arg1]_[Arg2]}` 例如 ${flash\_&gt;}
-* 默认函数上方将自动添加行 `var args = new Array()` 并写入参数，因此在内置函数中传入的参数可以直接通过 args 数组的形式使用
+* You can use `${[funcName]_[Arg1]_[Arg2]}` to get returned value by a custom function, e.g. ${flash\_&gt;}
+* We provide `args` \(an Array of String\) which you can use the parameters from the identifier
 
 
 
-#### 拓展例子
+#### Advanced Usage Example
 
 ```yaml
 bStats:

@@ -20,7 +20,7 @@ Bindings:
     - 'material:compass'
 ```
 
-## 注意
+## Note
 
 * Binding commands support **regex**
 * Binding commands will not be registered as real command

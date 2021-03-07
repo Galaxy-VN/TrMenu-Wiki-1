@@ -1,10 +1,10 @@
 ---
-description: 图标设置项均与 显示部分、交互部分 同级节点
+description: Icon Settings
 ---
 
 # Setting
 
-## 更新周期
+## Update
 
 * 更新周期包括 4 个（材质，名称，Lore，槽位）
 * 你可以通过配置数组的形式独立设置它们

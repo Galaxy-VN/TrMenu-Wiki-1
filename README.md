@@ -4,8 +4,6 @@
 
 TrMenu 是基于 [TabooLib](https://tabooproject.org/) 开发，发布于 2019-10-4 的一款全新的动态菜单系统
 
-目前全球范围内已有超过 950+ 服务器运行
-
 ![TrMenu \*bStats](https://bstats.org/signatures/bukkit/TrMenu.svg)
 
 ## 引导

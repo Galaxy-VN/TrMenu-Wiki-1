@@ -6,47 +6,48 @@ description: Icon Settings
 
 ## Update
 
-* 更新周期包括 4 个（材质，名称，Lore，槽位）
-* 你可以通过配置数组的形式独立设置它们
+* Update interval for animated texture, name, lore, and slots
 
 ```yaml
-# 设置一个值，同时应用到 材质，名称，Lore，槽位 中
+# Same interval for all four properties
 update: 20
 ```
 
 ```yaml
-# 不完全设置
-# 分别设置材质，名称，Lore的更新周期为 20, -1, 15
-# 槽位的更新周期将选取其中最高的一个，即 20
+# Incomplete setting
+# Here, only the material, name and lore are set to: 20, -1, 15
+# The slot update interval will be set to the highest of the defined values, in this case: 20
 update: [20, -1, 15]
 ```
 
 ```yaml
-# 完全配置, 即按顺序分别对应
+# Complete setting, the numbers will match in the same order the: Material, Name, Lore and Slot
 update: [-1, 5, 25, 30]
 ```
 
-* 不配置更新周期项，图标将默认不更新
-* 更新周期应与默认图标同级节点，子图标不支持自定义更新周期
-* 插件会根据属性是否需要更新（包含动画、变量）自动分配周期，因此不必在这麻烦配置
+* If the update interval is not set, the icon won't update at all
+* Sub icons do not support custom update intervals
+* In most cases, you can rest assured to use the first type of setting, the plugin will automatically determine the properties that need to be updated
 
-## 刷新周期
+## Refresh
 
-* 按优先级、条件重新计算子图标
-* 只有存在子图标时，此项才有效
-* 使用动作 Refresh，可以主动刷新图标，达到同样效果
+
+
+* This property works only if there are any sub icons.
+* During which the icon will recalculate by priority and display the first one which meets condition
+* You can also use `refresh` action to refresh specific icon
 
 ```yaml
 refresh: 20
 ```
 
-## 图标槽位
+## Slots
 
-* 针对静态槽位的图标，推荐通过 **布局** 功能来定义图标槽位
-* 手动配置槽位将覆写布局的配置
+* For icons with static slots, it is recommended to define the icon slots through **layout**
+* Manually configuring this property will overwrite the layout slots
 
 ```yaml
-slots: 6
+slot: 6
 ```
 
 ```yaml
@@ -61,7 +62,7 @@ slots:
 ```
 
 ```yaml
-# 动态槽位，List<List<Int>> 嵌套模式
+# Animated slots
 slots:
 - - 0
   - 1
@@ -71,40 +72,38 @@ slots:
   - 3
 ```
 
-## \* 继承
+## \* Inherit
 
 ```yaml
 inherit: true
 ```
 
-* 无论配置与否，默认子图标都将继承主图标的**材质**
-* 开启子图标继承，将额外继承主图标的**名称，Lore**
-* “继承” 是指子图标未配置的前提下，继承状态下子图标仍然可以通过配置来覆写
-* 默认继承与否可通过编辑 `settings.yml` 文件来设置
+* Every sub icon will inherit the material of the default icon whether configure or not
+* By enabling this, sub icons will also inherit **name** and **lore**
+* You still can configure sub icons' individual properties
 
-## \* 条件
+## \* Condition
 
-子图标的属性，条件计算结果为真时才可能显示此子图标
+Sub icon may only be displayed when the result of its condition calculation is true
 
 ```yaml
 condition: 'perm *trmenu.use'
 ```
 
-## \* 优先级
+## \* Priority
 
-决定该子图标的权重（筛选子图标时的顺序先后）
+Determine the weight of the sub-icon \(the order in which the sub-icons are filtered\)
 
 ```yaml
 priority: 20
 ```
 
-* 该项仅对子图标有效
-* 若不设置，则默认优先级为 **0**
-* 选取条件子图标时，按优先级**升序**依次计算子图标到满足条件的为止，即优先级最小的图标最先计算
+* If not set, the default priority will be **0**
+* When refreshing sub-icons, the sub-icons are calculated in ascending order of priority until the condition is met, that is, the icon with the lowest priority is calculated first
 
-在实际配置 YAML 文件时，此项为非必须项
+When actually configuring the YAML file, this property is optional
 
-插件会根据图标的 “配置位置” ，按顺序自动的分配一定优先级，例如
+The plugin will automatically assign a certain priority in order according to the "configuration position" of the icon, for example
 
 ```yaml
 Icons:
@@ -123,5 +122,7 @@ Icons:
           material: gold block
 ```
 
-会先计算条件为 `perm *op` 的子图标，再依次 `perm *mvp.user` 、`perm *vip.user`
+The sub icon with the condition of `perm *op` will be calculated first, and then `perm *mvp.user` , `perm *vip.user` in turn
+
+
 

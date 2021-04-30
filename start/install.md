@@ -31,7 +31,10 @@ TrMenu 需要在联网条件下载安装
 
 已知冲突插件 & 解决方案：
 
-* TODO
+* **LibsDisguises**
+  * 原因：发包冲突
+  * 解决方法：
+    * 在 LibsDisguises 的配置文件中将 `Remove-Armor` 设置为 `false`
 
 ## 注意
 

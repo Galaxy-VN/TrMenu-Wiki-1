@@ -22,9 +22,7 @@ TrMenu 是基于 [TabooLib](https://tabooproject.org/) 开发，发布于 **2019
 
 ## 附注
 
-TrMenu 的 GUI 菜单，几乎所有配置节点都是可选
+本文档可能更偏向技术性说明，入门者可以尝试配合查看以下**社区文档**方便理解上手
 
-接近可视化的布局模式、忽略大小写 & 多写法的节点，无一不对新手友好
-
-对于稍微有 **配置基础** 的服主而言，0.5~1 h 的文档参考学习即可**轻松入门**
+{% embed url="https://wiki.ptms.ink/index.php?title=%E7%A4%BE%E5%8C%BA:TrMenu" caption="TrMenu 社区教程" %}
 
